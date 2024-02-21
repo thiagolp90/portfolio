@@ -41,6 +41,7 @@ export default function Header()
             />
             <header className="fixed w-[114px] z-50 flex justify-between p-10">
                 <button className="relative z-50 space-y-2" onClick={handleMenuClick}>
+                    <span className="sr-only">Menu</span>
                     <span 
                         className={
                             (openMenu ? "rotate-45 translate-y-3" : "") +
