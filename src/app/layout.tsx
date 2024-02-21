@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Libre_Baskerville } from "next/font/google";
+import { GoogleAnalytics } from '@next/third-parties/google'
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -30,6 +31,7 @@ export default function RootLayout({
                     <Footer />
                 </main>
             </body>
+            <GoogleAnalytics gaId="G-CTF9HH11NZ" />
         </html>
     );
 }

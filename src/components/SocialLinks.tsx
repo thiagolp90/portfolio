@@ -5,6 +5,7 @@ import Link from "next/link";
 import { IconType } from "react-icons";
 
 interface SocialLinkProps {
+    title: string
     href: string
     icon: IconType
 }
@@ -16,6 +17,7 @@ function SocialLink({ link } : { link: SocialLinkProps})
             href={ link.href }
             target="_blank"
         >
+            <span className="sr-only">{ link.title }</span>
             <link.icon className="w-6 h-6 text-developes-creme hover:text-developes-success transition-all duration-300" />
         </Link>
     ); 
@@ -24,9 +26,9 @@ function SocialLink({ link } : { link: SocialLinkProps})
 export default function SocialLinks()
 {
     const socialLinks = [
-        { href: linkedinUrl, icon: FiLinkedin },
-        { href: githubUrl, icon: FiGithub },
-        { href: whatsappUrl, icon: BsWhatsapp },
+        { title: "Linkedin", href: linkedinUrl, icon: FiLinkedin },
+        { title: "Github", href: githubUrl, icon: FiGithub },
+        { title: "Whatsapp", href: whatsappUrl, icon: BsWhatsapp },
     ]
 
     return (
