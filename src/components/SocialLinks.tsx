@@ -16,6 +16,7 @@ function SocialLink({ link } : { link: SocialLinkProps})
         <Link 
             href={ link.href }
             target="_blank"
+            prefetch={false}
         >
             <span className="sr-only">{ link.title }</span>
             <link.icon className="w-6 h-6 text-developes-creme hover:text-developes-success transition-all duration-300" />
