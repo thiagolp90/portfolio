@@ -22,7 +22,7 @@ export default function ContactSection()
                             <Title
                                 anchor="contato"
                                 title="Contato"
-                                text="Ficou interessado e gostaria de um orçamento? Quem sabe uma parceiria? Me envie uma mensagem, basta clicar no link abaixo:"
+                                text="Ficou interessado e gostaria de um orçamento? Quem sabe uma parceiria? Me envie uma mensagem, basta clicar no botão abaixo:"
                             />
                         </div>
                         <div className="flex justify-center py-10">
