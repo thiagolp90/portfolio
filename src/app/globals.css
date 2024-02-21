@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-moz-selection{
+    @apply text-developes-creme bg-developes-success
+}
+::selection{
+    @apply text-developes-creme bg-developes-success
+}
+nav ul a{
+    @apply relative
+}
+nav ul a:hover,
+nav ul a.active{
+    @apply pl-4
+}
+nav ul a:before{
+    content: "";
+    @apply block absolute bg-developes-creme h-1 w-0 transition-all duration-300 top-4
+}
+nav ul a:hover:before,
+nav ul a.active:before{
+    @apply w-2
+}
+
+.progress-bar {
+    transform-origin: 0%;
+    @apply fixed z-50 top-0 left-0 right-0 h-2 bg-developes-success
+}
+
+.parallax {
+    overflow: hidden;
+    letter-spacing: -2px;
+    line-height: 1.2;
+    margin: 0;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.parallax .scroller {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 64px;
+    display: flex;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.parallax span {
+    display: block;
+    margin-right: 30px;
+}
