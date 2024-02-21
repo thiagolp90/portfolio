@@ -19,6 +19,7 @@ export default function Button({ href, children, full = false, target, download 
             }
             target={ target }
             download={ download }
+            prefetch={false}
         >
             { children }
         </Link>
