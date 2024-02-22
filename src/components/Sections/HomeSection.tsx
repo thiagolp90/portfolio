@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import Button from "../Button";
-import { FiDownload } from "react-icons/fi";
+import { FiChevronDown, FiDownload } from "react-icons/fi";
 import { cardVariants } from "@/app/utils";
 import SocialLinks from "../SocialLinks";
 import Title from "../Title";
@@ -51,6 +51,10 @@ export default function HomeSection()
                             className="object-cover object-center w-full h-full"
                         />
                     </div>
+                </div>
+                <div className="absolute bottom-2 w-full px-4 flex flex-col items-end lg:items-center -space-y-7 lg:-space-y-10 bounce">
+                    <FiChevronDown className="w-10 h-10 lg:w-14 lg:h-14 text-developes-creme" />
+                    <FiChevronDown className="w-10 h-10 lg:w-14 lg:h-14 text-developes-creme" />
                 </div>
             </section>
         </motion.div>
