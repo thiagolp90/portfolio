@@ -1,8 +1,11 @@
+'use client'
+
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { BsWhatsapp } from "react-icons/bs";
 import { githubUrl, linkedinUrl, whatsappUrl } from "@/app/utils";
 import Link from "next/link";
 import { IconType } from "react-icons";
+import { sendGAEvent } from "@next/third-parties/google";
 
 interface SocialLinkProps {
     title: string
@@ -10,13 +13,14 @@ interface SocialLinkProps {
     icon: IconType
 }
 
-function SocialLink({ link } : { link: SocialLinkProps})
+function SocialLink({ link, position } : { link: SocialLinkProps, position: string })
 {
     return (
         <Link 
             href={ link.href }
             target="_blank"
             prefetch={false}
+            onClick={() => sendGAEvent({ event: `click_${link.title.toLowerCase()}`, value: position })}
         >
             <span className="sr-only">{ link.title }</span>
             <link.icon className="w-6 h-6 text-developes-creme hover:text-developes-success transition-all duration-300" />
@@ -24,7 +28,7 @@ function SocialLink({ link } : { link: SocialLinkProps})
     ); 
 }
 
-export default function SocialLinks()
+export default function SocialLinks({ position }: { position: string })
 {
     const socialLinks = [
         { title: "Linkedin", href: linkedinUrl, icon: FiLinkedin },
@@ -34,7 +38,7 @@ export default function SocialLinks()
 
     return (
         socialLinks.length > 0 && socialLinks.map((socialLink: SocialLinkProps, i: number) => (
-            <SocialLink key={ i } link={ socialLink } />
+            <SocialLink key={ i } link={ socialLink } position={ position } />
         ))
     ); 
 }

@@ -1,3 +1,6 @@
+'use client'
+
+import { sendGAEvent } from "@next/third-parties/google";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,7 +14,12 @@ export default function PortfolioCard({ portfolio }: { portfolio: PortfolioCardP
 {
     return (
         <article className="text-center hover:-mt-2 transition-all duration-300">
-            <Link href={ portfolio.href } target="_blank" className="flex">
+            <Link
+                href={ portfolio.href }
+                target="_blank"
+                className="flex"
+                onClick={() => sendGAEvent({ event: "click_portfolio", value: portfolio.title })}
+            >
                 <Image
                     src={ portfolio.image }
                     alt={ portfolio.title }
