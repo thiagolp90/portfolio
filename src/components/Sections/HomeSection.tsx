@@ -46,8 +46,8 @@ export default function HomeSection()
                         <Image
                             src="/images/thiago-lopes.jpg"
                             alt="Thiago Lopes"
-                            width={980}
-                            height={980}
+                            width={ 980 }
+                            height={ 980 }
                             className="object-cover object-center w-full h-full"
                         />
                     </div>

@@ -15,8 +15,8 @@ export default function PortfolioCard({ portfolio }: { portfolio: PortfolioCardP
                 <Image
                     src={ portfolio.image }
                     alt={ portfolio.title }
-                    width={980}
-                    height={980}
+                    width={ 350 }
+                    height={ 350 }
                     className="flex object-contain w-full rounded-xl shadow-xl"
                 />
             </Link>
