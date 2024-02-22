@@ -45,19 +45,19 @@ export default function Header()
                     <span 
                         className={
                             (openMenu ? "rotate-45 translate-y-3" : "") +
-                            " flex w-9 h-1 bg-developes-creme transition-all duration-300"
+                            " flex w-9 h-1 bg-developes-creme transition-all duration-300 rounded"
                         }
                     ></span>
                     <span 
                         className={
                             (openMenu ? "opacity-0" : "") +
-                            " flex w-7 h-1 bg-developes-creme transition-all duration-300"
+                            " flex w-7 h-1 bg-developes-creme transition-all duration-300 rounded"
                         }
                     ></span>
                     <span 
                         className={
                             (openMenu ? "-rotate-45 -translate-y-3" : "") +
-                            " flex w-9 h-1 bg-developes-creme transition-all duration-300"
+                            " flex w-9 h-1 bg-developes-creme transition-all duration-300 rounded"
                         }
                     ></span>
                 </button>
