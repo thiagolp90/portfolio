@@ -28,7 +28,11 @@ export default function HomeSection()
                         />
                         <div className="flex flex-col md:flex-row mt-4 md:mt-10 space-y-4 md:space-y-0 md:space-x-10 items-center">
                             <div className="flex">
-                                <Button href="/download/cv-thiago-lopes-2024.pdf" target="_blank">
+                                <Button
+                                    href="/download/cv-thiago-lopes-2024.pdf"
+                                    target="_blank"
+                                    event={{ event: "click_curriculum" }}
+                                >
                                     <div className="flex space-x-2 items-center md:p-2">
                                         <FiDownload className="w-5 h-5 md:w-6 md:h-6 text-current" />
                                         <span className="md:text-xl">curriculum</span>
@@ -36,7 +40,7 @@ export default function HomeSection()
                                 </Button>
                             </div>
                             <div className="flex space-x-10">
-                                <SocialLinks />
+                                <SocialLinks position="home" />
                             </div>
                         </div>
                     </motion.div>
