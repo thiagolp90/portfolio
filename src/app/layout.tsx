@@ -26,6 +26,7 @@ export default function RootLayout({
         <html lang="pt-BR" style={{ scrollBehavior:'smooth' }}>
             <head>
                 <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+                <meta name="google-site-verification" content="ILUVWvEyhMsOoD-cQfgAHlgykKS740ZYeRittckgQ7w" />
             </head>
             <body className={ libreBaskerville.className }>
                 <main className="relative z-20">
