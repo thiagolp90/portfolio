@@ -14,6 +14,9 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
     title: "Thiago Lopes - desenvolvedor full-stack senior",
     description: "Bacharelado em Ciência da Computação (2007-2010), há mais de 15 anos como desenvolvedor no mercado nacional e internacional.",
+    verification: {
+        google: "cQfgAHlgykKS740ZYeRittckgQ7w"
+    }
 };
 
 export default function RootLayout({
@@ -26,7 +29,6 @@ export default function RootLayout({
         <html lang="pt-BR" style={{ scrollBehavior:'smooth' }}>
             <head>
                 <link rel="dns-prefetch" href="//www.googletagmanager.com" />
-                <meta name="google-site-verification" content="ILUVWvEyhMsOoD-cQfgAHlgykKS740ZYeRittckgQ7w" />
             </head>
             <body className={ libreBaskerville.className }>
                 <main className="relative z-20">
