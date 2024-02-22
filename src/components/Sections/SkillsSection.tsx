@@ -18,8 +18,9 @@ export default function AboutSection()
         // {title: "Bootstrap", experience: "10 anos", width: "w-9/12"},
         {title: "Laravel", experience: "6 anos", width: "w-7/12"},
         {title: "Tailwind", experience: "4 anos", width: "w-5/12"},
-        {title: "React", experience: "4 anos", width: "w-5/12"},
+        {title: "React JS", experience: "4 anos", width: "w-5/12"},
         {title: "React Native", experience: "3 anos", width: "w-4/12"},
+        {title: "Next JS", experience: "2 anos", width: "w-3/12"},
     ]
     return (
         <motion.div
