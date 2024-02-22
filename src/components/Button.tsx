@@ -1,4 +1,7 @@
+'use client'
+
 import Link from "next/link";
+import { sendGAEvent } from '@next/third-parties/google'
 
 interface ButtonProps {
     href: string
@@ -6,10 +9,17 @@ interface ButtonProps {
     full?: boolean
     target?: string
     download?: boolean
+    event?: object|null
 }
 
-export default function Button({ href, children, full = false, target, download }: ButtonProps)
+export default function Button({ href, children, full = false, target, download, event = null }: ButtonProps)
 {
+    const handleClick = () => {
+        if(event){
+            sendGAEvent(event)
+        }
+    }
+
     return (
         <Link 
             href={ href } 
@@ -20,6 +30,7 @@ export default function Button({ href, children, full = false, target, download 
             target={ target }
             download={ download }
             prefetch={false}
+            onClick={() => { handleClick() }}
         >
             { children }
         </Link>

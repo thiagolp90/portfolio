@@ -26,7 +26,12 @@ export default function ContactSection()
                             />
                         </div>
                         <div className="flex justify-center py-10">
-                            <Button href={ whatsappUrl } target="_blank" full>
+                            <Button
+                                href={ whatsappUrl }
+                                target="_blank"
+                                event={{ event: "click_whatsapp", value: "contact" }}
+                                full
+                            >
                                 <div className="flex space-x-2 items-center md:p-2">
                                     <BsWhatsapp className="w-5 h-5 md:w-6 md:h-6 text-current" />
                                     <span className="md:text-xl">enviar mensagem</span>

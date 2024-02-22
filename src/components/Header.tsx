@@ -89,7 +89,12 @@ export default function Header()
                     </ul>
                 </div>
                 <div>
-                    <Button href={ whatsappUrl } target="_blank" full>
+                    <Button 
+                        href={ whatsappUrl }
+                        target="_blank"
+                        event={{ event: "click_whatsapp", value: "header" }}
+                        full
+                    >
                         <div className="flex space-x-2 items-center md:p-2">
                             <BsWhatsapp className="w-5 h-5 md:w-6 md:h-6 text-current" />
                             <span className="md:text-xl">enviar mensagem</span>
