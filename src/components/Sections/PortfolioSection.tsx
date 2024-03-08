@@ -9,13 +9,13 @@ import PortfolioCard, { PortfolioCardProps } from "../Cards/PortfolioCard";
 export default function PortfolioSection({ dict }: any)
 {
     const portfolios = [
-        // { href: 'https://www.edunlock.com/', title: 'Edunlock', image: "/images/portfolio-1.jpg" },
-        { href: 'https://www.facultejeancalvin.com/', title: 'Faculté Jean Calvin', image: "/images/portfolio-2.jpg" },
-        { href: 'https://jedonneaudenier.org/', title: 'Le Denier de l\'Église Catholique', image: "/images/portfolio-3.jpg" },
-        { href: 'https://catholique-reims.fr/', title: 'L\'Église Catholique à Reims et dans les Ardennes', image: "/images/portfolio-4.jpg" },
-        { href: 'https://montagnesdesvosges.fr/', title: 'Magazine Montagnes des Vosges', image: "/images/portfolio-5.jpg" },
-        { href: 'https://www.concretal.com.br/', title: 'Concretal Engenharia', image: "/images/portfolio-6.jpg" },
-        { href: 'https://www.grupomariza.com.br/', title: 'Grupo Mariza', image: "/images/portfolio-7.jpg" },
+        // { href: 'https://www.edunlock.com/', title: 'Edunlock', image: "/_static/portfolio-1.jpg" },
+        { href: 'https://www.facultejeancalvin.com/', title: 'Faculté Jean Calvin', image: "/_static/portfolio-2.jpg" },
+        { href: 'https://jedonneaudenier.org/', title: 'Le Denier de l\'Église Catholique', image: "/_static/portfolio-3.jpg" },
+        { href: 'https://catholique-reims.fr/', title: 'L\'Église Catholique à Reims et dans les Ardennes', image: "/_static/portfolio-4.jpg" },
+        { href: 'https://montagnesdesvosges.fr/', title: 'Magazine Montagnes des Vosges', image: "/_static/portfolio-5.jpg" },
+        { href: 'https://www.concretal.com.br/', title: 'Concretal Engenharia', image: "/_static/portfolio-6.jpg" },
+        { href: 'https://www.grupomariza.com.br/', title: 'Grupo Mariza', image: "/_static/portfolio-7.jpg" },
     ]
 
     return (

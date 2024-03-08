@@ -1,6 +1,6 @@
 Portfólio do desenvolvedor full-stack senior [Thiago Lopes](https://thiagolopes.work).
 
-![Portfólio Thiago Lopes](/public/images/readme.jpg)
+![Portfólio Thiago Lopes](/public/_static/readme.jpg)
 
 ## Sobre mim
 
