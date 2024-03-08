@@ -49,7 +49,7 @@ export default function HomeSection({ dict, lang }: { dict: any, lang: "pt" | "e
                 <div className="flex bg-developes-creme h-1/2 xl:w-1/2 lg:h-screen order-1 lg:order-2">
                     <div className="w-full h-full lg:fixed lg:w-1/2">
                         <Image
-                            src="/images/thiago-lopes.jpg"
+                            src="/_static/thiago-lopes.jpg"
                             alt="Thiago Lopes"
                             width={ 980 }
                             height={ 980 }
@@ -59,7 +59,7 @@ export default function HomeSection({ dict, lang }: { dict: any, lang: "pt" | "e
                             {lang != "pt" && (
                                 <Link href="/pt">
                                     <Image
-                                        src="/flags/br.svg"
+                                        src="/_static/br.svg"
                                         alt="Português"
                                         width={ 32 }
                                         height={ 32 }
@@ -69,7 +69,7 @@ export default function HomeSection({ dict, lang }: { dict: any, lang: "pt" | "e
                             {lang != "en" && (
                                 <Link href="/en">
                                     <Image
-                                        src="/flags/us.svg"
+                                        src="/_static/us.svg"
                                         alt="English"
                                         width={ 32 }
                                         height={ 32 }
@@ -79,7 +79,7 @@ export default function HomeSection({ dict, lang }: { dict: any, lang: "pt" | "e
                             {lang != "fr" && (
                                 <Link href="/fr">
                                     <Image
-                                        src="/flags/fr.svg"
+                                        src="/_static/fr.svg"
                                         alt="Français"
                                         width={ 32 }
                                         height={ 32 }
