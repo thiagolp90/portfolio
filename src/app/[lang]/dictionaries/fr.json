@@ -1,0 +1,43 @@
+{
+    "header": {
+        "home": "À propos",
+        "skills": "Compétences",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "contact": "Contact",
+        "button": "envoyer un message"
+    },
+    "home": {
+        "anchor": "a_propos",
+        "role": "développeur full-stack senior",
+        "description": "Bac+4 en Informatique « 2007 - 2010 », depuis plus de 15 ans comme développeur sur le marché national et international.",
+        "curriculum": "/download/cv-thiago-lopes-2024.pdf"
+    },
+    "skills": {
+        "anchor": "competences",
+        "skills": "Compétences",
+        "years": "années"
+    },
+    "services": {
+        "anchor": "services",
+        "title": "Services",
+        "description": "Avez-vous besoin de quelque chose? Peut-être que je peux vous aider ici :",
+        "service_1": "Landing pages",
+        "service_2": "Sites institutionnels",
+        "service_3": "E-commerces",
+        "service_4": "Application web",
+        "service_5": "Application de bureau",
+        "service_6": "Application mobile"
+    },
+    "portfolio": {
+        "anchor": "portfolio",
+        "title": "Portfolio",
+        "description": "Ci-dessous les derniers projets réalisés :"
+    },
+    "contact": {
+        "anchor": "contact",
+        "title": "Contact",
+        "description": "Vous êtes intéressé et souhaitez un devis ? Ou un partenariat ? Envoyez-moi un message, cliquez tout simplement sur le bouton ci-dessous :",
+        "button": "envoyer un message"
+    }
+}
