@@ -18,7 +18,7 @@ export default function PortfolioCard({ portfolio }: { portfolio: PortfolioCardP
                 href={ portfolio.href }
                 target="_blank"
                 className="flex"
-                onClick={() => sendGAEvent({ event: "click_portfolio", value: portfolio.title })}
+                onClick={() => sendGAEvent({ event: "click", value: `Portfólio: ${portfolio.title}` })}
             >
                 <Image
                     src={ portfolio.image }

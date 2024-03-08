@@ -92,7 +92,7 @@ export default function Header({ dict }: any)
                     <Button 
                         href={ whatsappUrl }
                         target="_blank"
-                        event={{ event: "click_whatsapp", value: "header" }}
+                        event={{ event: "click", value: "whatsapp_header" }}
                         full
                     >
                         <div className="flex space-x-2 items-center md:p-2">
