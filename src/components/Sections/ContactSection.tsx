@@ -29,7 +29,7 @@ export default function ContactSection({ dict }: any)
                             <Button
                                 href={ whatsappUrl }
                                 target="_blank"
-                                event={{ event: "click_whatsapp", value: "contact" }}
+                                event={{ event: "click", value: "whatsapp_contact" }}
                                 full
                             >
                                 <div className="flex space-x-2 items-center md:p-2">

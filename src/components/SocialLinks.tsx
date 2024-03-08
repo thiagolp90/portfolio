@@ -20,7 +20,7 @@ function SocialLink({ link, position } : { link: SocialLinkProps, position: stri
             href={ link.href }
             target="_blank"
             prefetch={false}
-            onClick={() => sendGAEvent({ event: `click_${link.title.toLowerCase()}`, value: position })}
+            onClick={() => sendGAEvent({ event: "click", value: `${link.title.toLowerCase()}_${position}` })}
         >
             <span className="sr-only">{ link.title }</span>
             <link.icon className="w-6 h-6 text-developes-creme hover:text-developes-success transition-all duration-300" />
