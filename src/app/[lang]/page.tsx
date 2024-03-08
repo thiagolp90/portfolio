@@ -6,19 +6,22 @@ import ServicesSection from "@/components/Sections/ServicesSection";
 import Parallax2Section from "@/components/Sections/Parallax2Section";
 import PortfolioSection from "@/components/Sections/PortfolioSection";
 import Parallax3Section from "@/components/Sections/Parallax3Section";
+import { getDictionary } from './dictionaries'
 
-export default function Home()
+export default async function Page({ params: { lang } }: { params: { lang: 'pt' | 'en' | 'fr' }})
 {
+    const dict = await getDictionary(lang) as any
+
     return (
         <main className="flex flex-col">
-            <HomeSection />
-            <SkillsSection />
+            <HomeSection dict={ dict.home } lang={ lang } />
+            <SkillsSection dict={ dict.skills } />
             <Parallax1Section />
-            <ServicesSection />
+            <ServicesSection dict={ dict.services } />
             <Parallax2Section />
-            <PortfolioSection />
+            <PortfolioSection dict={ dict.portfolio } />
             <Parallax3Section />
-            <ContactSection />
+            <ContactSection dict={ dict.contact } />
         </main>
     );
 }

@@ -1,12 +1,12 @@
 'use client'
 
-import { cardVariants } from "@/app/utils";
+import { cardVariants } from "@/app/[lang]/utils";
 import { motion } from "framer-motion";
 import Title from "../Title";
 import Section from "../Section";
 import PortfolioCard, { PortfolioCardProps } from "../Cards/PortfolioCard";
 
-export default function PortfolioSection()
+export default function PortfolioSection({ dict }: any)
 {
     const portfolios = [
         // { href: 'https://www.edunlock.com/', title: 'Edunlock', image: "/images/portfolio-1.jpg" },
@@ -24,13 +24,13 @@ export default function PortfolioSection()
             whileInView="onscreen"
             viewport={{ once: true, amount: .2 }}
         >
-            <Section id="portfolio">
+            <Section id={ dict.anchor }>
                 <motion.div className="flex flex-col space-y-4 w-10/12 max-w-[1080px] mx-auto" variants={ cardVariants }>
                     <div className="text-center">
                         <Title
-                            anchor="portfolio"
-                            title="Portfólio"
-                            text="A seguir os últimos projetos realizados:"
+                            anchor={ dict.anchor }
+                            title={ dict.title }
+                            text={ dict.description }
                         />
                     </div>
                     <div className="pt-10 grid gap-6 grid-cols-1 sm:grid-cols-2 xl:grid-cols-3">

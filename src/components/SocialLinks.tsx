@@ -2,7 +2,7 @@
 
 import { FiGithub, FiLinkedin } from "react-icons/fi";
 import { BsWhatsapp } from "react-icons/bs";
-import { githubUrl, linkedinUrl, whatsappUrl } from "@/app/utils";
+import { githubUrl, linkedinUrl, whatsappUrl } from "@/app/[lang]/utils";
 import Link from "next/link";
 import { IconType } from "react-icons";
 import { sendGAEvent } from "@next/third-parties/google";

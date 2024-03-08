@@ -1,0 +1,43 @@
+{
+    "header": {
+        "home": "About",
+        "skills": "Skills",
+        "services": "Services",
+        "portfolio": "Portfolio",
+        "contact": "Get in touch",
+        "button": "send a message"
+    },
+    "home": {
+        "anchor": "about",
+        "role": "senior full-stack developer",
+        "description": "Bachelor in Computer Science (2007-2010), for over 15 years as a developer in the international market.",
+        "curriculum": "/download/cv-thiago-lopes-2024.pdf"
+    },
+    "skills": {
+        "anchor": "skills",
+        "skills": "Skills",
+        "years": "years"
+    },
+    "services": {
+        "anchor": "services",
+        "title": "Services",
+        "description": "Do you need something? I can help you with this:",
+        "service_1": "Landing Pages",
+        "service_2": "Websites",
+        "service_3": "E-commerces",
+        "service_4": "Web Apps",
+        "service_5": "Desktop Apps",
+        "service_6": "Mobile Apps"
+    },
+    "portfolio": {
+        "anchor": "portfolio",
+        "title": "Portfolio",
+        "description": "The latest projects bellow:"
+    },
+    "contact": {
+        "anchor": "contact",
+        "title": "Get in touch",
+        "description": "Send me a message, just click the button below:",
+        "button": "send a message"
+    }
+}
