@@ -32,7 +32,7 @@ export default function HomeSection({ dict, lang }: { dict: any, lang: "pt" | "e
                                 <Button
                                     href={ dict.curriculum }
                                     target="_blank"
-                                    event={{ event: "click", value: "curriculum" }}
+                                    event={{ event: "file_download", value: "curriculum" }}
                                 >
                                     <div className="flex space-x-2 items-center md:p-2">
                                         <FiDownload className="w-5 h-5 md:w-6 md:h-6 text-current" />
