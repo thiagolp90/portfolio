@@ -23,7 +23,7 @@ export default function HomeSection()
                             anchor="inicio"
                             title="Thiago Lopes"
                             subtitle="desenvolvedor full-stack senior"
-                            text="Bacharelado em Ciência da Computação (2007-2010), há mais de 15 anos como desenvolvedor no mercado nacional e internacional."
+                            text="Bacharel em Ciência da Computação (2007-2010), há mais de 15 anos como desenvolvedor no mercado nacional e internacional."
                             primary
                         />
                         <div className="flex flex-col md:flex-row mt-4 md:mt-10 space-y-4 md:space-y-0 md:space-x-10 items-center">
