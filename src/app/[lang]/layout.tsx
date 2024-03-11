@@ -21,7 +21,7 @@ export async function generateMetadata({
     const dict = await getDictionary(lang) as any
    
     return {
-        title: `Thiago lopes - ${dict.home.role}`,
+        title: `Thiago Lopes - ${dict.home.role}`,
         description: dict.home.description,
         verification: {
             google: "cQfgAHlgykKS740ZYeRittckgQ7w"
